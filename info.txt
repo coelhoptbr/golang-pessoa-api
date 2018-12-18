@@ -1,0 +1,14 @@
+go env
+
+go get github.com/gorilla/mux
+
+go build
+
+govendor fetch gopkg.in/mgo.v2
+govendor remove +u gopkg.in/mgo.v2
+
+
+go run *.go
+
+
+ go test ./teste/
